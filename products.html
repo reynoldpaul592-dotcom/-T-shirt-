@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Fashion Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+  <a class="logo" href="index.html">FASHION STORE</a>
+  <label for="menu-toggle" class="burger" aria-hidden="true">&#9776;</label>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html" aria-current="page">Products</a><a href="contact.html">Contact</a>
+  </nav>
+  <form class="search" role="search" action="products.html">
+    <label class="sr" for="site-search">Search products</label>
+    <input id="site-search" type="search" placeholder="Search tees">
+    <button type="submit" aria-label="Search">&#128269;</button>
+  </form>
+  <!-- REPLACE the # links with your real social media pages -->
+  <div class="h-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="Pinterest">PI</a></div>
+  <a class="bag" href="products.html" aria-current="page" aria-label="Shopping bag">&#128092; <span>0</span></a>
+</header>
+<main>
+<section class="page-head" id="top"><div class="container"><h1>Explore Our Collection</h1><p>Plain, printed, graphic and oversized T-shirts. Choose a category to filter the products below.</p></div></section>
+<section id="collection" aria-label="Product catalogue"><div class="container">
+      <input class="radio" type="radio" name="cat" id="f-all" aria-label="All Products" checked>
+      <input class="radio" type="radio" name="cat" id="f-men" aria-label="Men's T-Shirts">
+      <input class="radio" type="radio" name="cat" id="f-women" aria-label="Women's T-Shirts">
+      <input class="radio" type="radio" name="cat" id="f-oversized" aria-label="Oversized T-Shirts">
+      <input class="radio" type="radio" name="cat" id="f-graphic" aria-label="Graphic T-Shirts">
+      <input class="radio" type="radio" name="cat" id="f-plain" aria-label="Plain T-Shirts">
+      <input class="radio" type="radio" name="cat" id="f-printed" aria-label="Printed T-Shirts">
+      <input class="radio" type="radio" name="cat" id="f-new" aria-label="New Arrivals">
+      <div class="filters" role="group" aria-label="Category filters"><label for="f-all">All Products</label><label for="f-men">Men's T-Shirts</label><label for="f-women">Women's T-Shirts</label><label for="f-oversized">Oversized T-Shirts</label><label for="f-graphic">Graphic T-Shirts</label><label for="f-plain">Plain T-Shirts</label><label for="f-printed">Printed T-Shirts</label><label for="f-new">New Arrivals</label></div>
+      <div class="hero promo promo-wide promo-short"><img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1600&q=70" loading="lazy" alt="T-shirts on a rack"><div class="container"><h2>New Season Collection</h2><p>Fresh designs, comfortable fabrics.</p></div></div>
+      <div class="pgrid">
+      <article class="card p men plain">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Classic Black Tee T-shirt"><span class="badge">Best Seller</span></a>
+        <div class="card-body"><p class="tag">Men's · Plain</p><h3>Classic Black Tee</h3><p class="desc">Soft cotton crew neck in deep black.</p><p class="price">PKR 1,499</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p men plain">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Classic White Tee T-shirt"></a>
+        <div class="card-body"><p class="tag">Men's · Plain</p><h3>Classic White Tee</h3><p class="desc">A clean white essential for any outfit.</p><p class="price">PKR 1,399</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p oversized graphic new">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Oversized Graphic Tee T-shirt"><span class="badge">New Arrival</span></a>
+        <div class="card-body"><p class="tag">Oversized · Graphic</p><h3>Oversized Graphic Tee</h3><p class="desc">Drop-shoulder fit with a bold back print.</p><p class="price">PKR 2,199</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p women plain">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Essential Cotton Tee T-shirt"></a>
+        <div class="card-body"><p class="tag">Women's · Plain</p><h3>Essential Cotton Tee</h3><p class="desc">Lightweight everyday tee, easy to layer.</p><p class="price">PKR 1,299</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p men printed graphic new">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Street Print Tee T-shirt"><span class="badge">New Arrival</span></a>
+        <div class="card-body"><p class="tag">Men's · Printed · Graphic</p><h3>Street Print Tee</h3><p class="desc">Urban print on a relaxed fit.</p><p class="price">PKR 1,899</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p oversized women">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Relaxed Oversized Tee T-shirt"><span class="badge">Best Seller</span></a>
+        <div class="card-body"><p class="tag">Oversized · Women's</p><h3>Relaxed Oversized Tee</h3><p class="desc">Roomy and soft for lazy weekends.</p><p class="price">PKR 2,099</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p men printed">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Minimal Logo Tee T-shirt"></a>
+        <div class="card-body"><p class="tag">Men's · Printed</p><h3>Minimal Logo Tee</h3><p class="desc">Small chest logo, premium feel.</p><p class="price">PKR 1,599</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p women plain">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Soft Crew Tee T-shirt"></a>
+        <div class="card-body"><p class="tag">Women's · Plain</p><h3>Soft Crew Tee</h3><p class="desc">Breathable cotton for warm days.</p><p class="price">PKR 1,349</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p women graphic printed new">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Urban Graphic Tee T-shirt"><span class="badge">New Arrival</span></a>
+        <div class="card-body"><p class="tag">Women's · Graphic · Printed</p><h3>Urban Graphic Tee</h3><p class="desc">Artistic graphic with a modern cut.</p><p class="price">PKR 1,999</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p oversized men">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Drop Shoulder Tee T-shirt"></a>
+        <div class="card-body"><p class="tag">Oversized · Men's</p><h3>Drop Shoulder Tee</h3><p class="desc">Heavy cotton with a streetwear drape.</p><p class="price">PKR 2,149</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p men plain">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Pocket Everyday Tee T-shirt"></a>
+        <div class="card-body"><p class="tag">Men's · Plain</p><h3>Pocket Everyday Tee</h3><p class="desc">Simple tee with a neat chest pocket.</p><p class="price">PKR 1,449</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p women printed">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Studio Printed Tee T-shirt"><span class="badge">Best Seller</span></a>
+        <div class="card-body"><p class="tag">Women's · Printed</p><h3>Studio Printed Tee</h3><p class="desc">Soft print for a creative everyday look.</p><p class="price">PKR 1,799</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      </div>
+      <p class="limits">Sample products and PKR prices: edit them freely. The category filter works with CSS only. Search, the shopping bag and "View Product" buttons are visual demos: a real store needs a backend or e-commerce platform.</p>
+      <a class="link to-top" href="#top">Back to Top</a>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div><p class="logo">FASHION STORE</p><p>Comfortable, stylish T-shirts for everyday fashion. Simple designs, honest quality.</p></div>
+    <div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></div>
+    <div><h3>Categories</h3><a href="products.html">Men's T-Shirts</a><a href="products.html">Women's T-Shirts</a><a href="products.html">Oversized T-Shirts</a><a href="products.html">Graphic T-Shirts</a><a href="products.html">Plain T-Shirts</a><a href="products.html">Printed T-Shirts</a></div>
+    <div><h3>Contact</h3><!-- REPLACE these sample details -->
+      <p>Email: hello@example.com</p><p>Phone: +92 000 0000000</p><p>Address: Sample Street, Karachi</p>
+      <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Pinterest</a>
+    </div>
+  </div>
+  <p class="copy">&copy; 2026 Fashion Store. All rights reserved.</p>
+</footer>
+</body>
+</html>

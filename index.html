@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Fashion Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+  <a class="logo" href="index.html" aria-current="page">FASHION STORE</a>
+  <label for="menu-toggle" class="burger" aria-hidden="true">&#9776;</label>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a>
+  </nav>
+  <form class="search" role="search" action="products.html">
+    <label class="sr" for="site-search">Search products</label>
+    <input id="site-search" type="search" placeholder="Search tees">
+    <button type="submit" aria-label="Search">&#128269;</button>
+  </form>
+  <!-- REPLACE the # links with your real social media pages -->
+  <div class="h-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="Pinterest">PI</a></div>
+  <a class="bag" href="products.html" aria-label="Shopping bag">&#128092; <span>0</span></a>
+</header>
+<main>
+<section class="hero" aria-label="Welcome">
+  <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1600&q=70" loading="lazy" alt="Fashion models wearing stylish T-shirts">
+  <div class="container"><h1>Wear Your Style. Define Your Story.</h1><p>Fashion Store brings you comfortable, modern T-shirts designed for everyday confidence.</p>
+  <div class="btn-row"><a class="btn btn-light" href="products.html">Shop Now</a><a class="btn btn-outline" href="#categories">Explore Collection</a></div></div>
+</section>
+<section id="categories" aria-labelledby="cat-h"><div class="container">
+  <div class="head"><h2 id="cat-h">Shop by Category</h2><p>Choose the style that fits you.</p></div>
+  <div class="grid cats-grid">
+      <a class="cat" href="products.html"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Men's T-Shirts collection"><div><h3>Men's T-Shirts</h3><span>Shop now</span></div></a>
+      <a class="cat" href="products.html"><img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Women's T-Shirts collection"><div><h3>Women's T-Shirts</h3><span>Shop now</span></div></a>
+      <a class="cat" href="products.html"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Oversized T-Shirts collection"><div><h3>Oversized T-Shirts</h3><span>Shop now</span></div></a>
+      <a class="cat" href="products.html"><img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Graphic T-Shirts collection"><div><h3>Graphic T-Shirts</h3><span>Shop now</span></div></a>
+      <a class="cat" href="products.html"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Plain T-Shirts collection"><div><h3>Plain T-Shirts</h3><span>Shop now</span></div></a>
+      <a class="cat" href="products.html"><img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Printed T-Shirts collection"><div><h3>Printed T-Shirts</h3><span>Shop now</span></div></a>
+  </div></div></section>
+<section class="bg-gray" aria-labelledby="feat-h"><div class="container">
+  <div class="head"><h2 id="feat-h">Featured Products</h2><p>Sample products and prices you can edit.</p></div>
+  <div class="grid g4">
+      <article class="card p men plain">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Classic Black Tee T-shirt"><span class="badge">Best Seller</span></a>
+        <div class="card-body"><p class="tag">Men's · Plain</p><h3>Classic Black Tee</h3><p class="desc">Soft cotton crew neck in deep black.</p><p class="price">PKR 1,499</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p men plain">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Classic White Tee T-shirt"></a>
+        <div class="card-body"><p class="tag">Men's · Plain</p><h3>Classic White Tee</h3><p class="desc">A clean white essential for any outfit.</p><p class="price">PKR 1,399</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p oversized graphic new">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Oversized Graphic Tee T-shirt"><span class="badge">New Arrival</span></a>
+        <div class="card-body"><p class="tag">Oversized · Graphic</p><h3>Oversized Graphic Tee</h3><p class="desc">Drop-shoulder fit with a bold back print.</p><p class="price">PKR 2,199</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+      <article class="card p women plain">
+        <a class="card-img" href="products.html"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Essential Cotton Tee T-shirt"></a>
+        <div class="card-body"><p class="tag">Women's · Plain</p><h3>Essential Cotton Tee</h3><p class="desc">Lightweight everyday tee, easy to layer.</p><p class="price">PKR 1,299</p><a class="btn small" href="products.html">View Product</a></div>
+      </article>
+  </div></div></section>
+<section aria-labelledby="new-h"><div class="container">
+  <div class="head"><h2 id="new-h">New Arrivals</h2><p>The latest T-shirt designs.</p></div>
+  <div class="grid g4">
+      <a class="card" href="products.html"><span class="card-img"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Oversized Graphic Tee T-shirt"><span class="badge">New</span></span><span class="card-body"><h3>Oversized Graphic Tee</h3><span class="price">PKR 2,199</span><br><span class="link">View Product</span></span></a>
+      <a class="card" href="products.html"><span class="card-img"><img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Street Print Tee T-shirt"><span class="badge">New</span></span><span class="card-body"><h3>Street Print Tee</h3><span class="price">PKR 1,899</span><br><span class="link">View Product</span></span></a>
+      <a class="card" href="products.html"><span class="card-img"><img src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Urban Graphic Tee T-shirt"><span class="badge">New</span></span><span class="card-body"><h3>Urban Graphic Tee</h3><span class="price">PKR 1,999</span><br><span class="link">View Product</span></span></a>
+      <a class="card" href="products.html"><span class="card-img"><img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Minimal Logo Tee T-shirt"><span class="badge">New</span></span><span class="card-body"><h3>Minimal Logo Tee</h3><span class="price">PKR 1,599</span><br><span class="link">View Product</span></span></a>
+  </div></div></section>
+<section class="bg-gray" aria-labelledby="why-h"><div class="container">
+  <div class="head"><h2 id="why-h">Why Choose Fashion Store?</h2></div>
+  <div class="grid g4">
+      <div class="feature"><span class="icon">&#9825;</span><h3>Comfortable Everyday Wear</h3><p>Soft fabrics that feel good all day.</p></div>
+      <div class="feature"><span class="icon">&#9733;</span><h3>Modern Designs</h3><p>Fresh looks that keep up with trends.</p></div>
+      <div class="feature"><span class="icon">&#10003;</span><h3>Quality-Focused Products</h3><p>Careful stitching and quality checks.</p></div>
+      <div class="feature"><span class="icon">&#9670;</span><h3>Easy-to-Style Essentials</h3><p>Pieces that pair with anything.</p></div>
+  </div></div></section>
+<section class="hero promo" aria-label="Promotion"><img src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=1600&q=70" loading="lazy" alt="Street style fashion look">
+  <div class="container"><h2>Find Your Everyday Essential</h2><p>Explore plain, printed and graphic tees made for daily life.</p><a class="btn btn-light" href="products.html">Explore Collection</a></div></section>
+<section aria-labelledby="brand-h"><div class="container split">
+  <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=70" loading="lazy" alt="Woman wearing a Fashion Store T-shirt">
+  <div><h2 id="brand-h">Fashion That Feels Like You</h2><p>Fashion Store makes T-shirts that are as comfortable as they are stylish. We focus on soft fabrics, honest fits and designs you can wear anywhere.</p><a class="btn" href="about.html">Learn More About Us</a></div>
+</div></section>
+<section class="bg-gray" aria-labelledby="rev-h"><div class="container">
+  <div class="head"><h2 id="rev-h">Customer Reviews</h2></div>
+  <div class="grid g3">
+      <blockquote class="review"><p>&ldquo;Soft fabric and a great fit. I now own three of them.&rdquo;</p><cite>Sample Customer, Karachi</cite></blockquote>
+      <blockquote class="review"><p>&ldquo;The oversized tee is exactly the look I wanted.&rdquo;</p><cite>Sample Customer, Lahore</cite></blockquote>
+      <blockquote class="review"><p>&ldquo;Simple, stylish and comfortable for daily wear.&rdquo;</p><cite>Sample Customer, Islamabad</cite></blockquote>
+  </div><p class="note">Sample content only. Replace with real reviews.</p></div></section>
+<section class="newsletter" aria-labelledby="news-h"><div class="container">
+  <h2 id="news-h">Join the Fashion Store Community</h2><p>Be the first to hear about new drops.</p>
+  <!-- Design only: a backend or email service is needed to collect emails -->
+  <form action="#" method="post"><label class="sr" for="news-email">Email address</label><input id="news-email" type="email" placeholder="Enter your email" required><button class="btn btn-light" type="submit">Subscribe</button></form>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div><p class="logo">FASHION STORE</p><p>Comfortable, stylish T-shirts for everyday fashion. Simple designs, honest quality.</p></div>
+    <div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></div>
+    <div><h3>Categories</h3><a href="products.html">Men's T-Shirts</a><a href="products.html">Women's T-Shirts</a><a href="products.html">Oversized T-Shirts</a><a href="products.html">Graphic T-Shirts</a><a href="products.html">Plain T-Shirts</a><a href="products.html">Printed T-Shirts</a></div>
+    <div><h3>Contact</h3><!-- REPLACE these sample details -->
+      <p>Email: hello@example.com</p><p>Phone: +92 000 0000000</p><p>Address: Sample Street, Karachi</p>
+      <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Pinterest</a>
+    </div>
+  </div>
+  <p class="copy">&copy; 2026 Fashion Store. All rights reserved.</p>
+</footer>
+</body>
+</html>

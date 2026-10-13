@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Fashion Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+  <a class="logo" href="index.html">FASHION STORE</a>
+  <label for="menu-toggle" class="burger" aria-hidden="true">&#9776;</label>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+  <form class="search" role="search" action="products.html">
+    <label class="sr" for="site-search">Search products</label>
+    <input id="site-search" type="search" placeholder="Search tees">
+    <button type="submit" aria-label="Search">&#128269;</button>
+  </form>
+  <!-- REPLACE the # links with your real social media pages -->
+  <div class="h-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="Pinterest">PI</a></div>
+  <a class="bag" href="products.html" aria-label="Shopping bag">&#128092; <span>0</span></a>
+</header>
+<main>
+<section class="hero hero-mid" aria-label="Contact"><img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=1600&q=70" loading="lazy" alt="Clothing store interior">
+  <div class="container"><h1>Let's Talk About Style.</h1><p>Questions, ideas or feedback? We would love to hear from you.</p></div></section>
+<section aria-labelledby="ct-h"><div class="container contact-grid"><div>
+  <h2 id="ct-h">Send us a message</h2>
+  <!-- NOTE: HTML cannot send this form. Set action to a form service (e.g. Formspree) or your own backend. -->
+  <form class="contact" action="#" method="post">
+    <label for="name">Full Name</label><input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required>
+    <label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+    <label for="phone">Phone Number <span class="req">(optional)</span></label><input id="phone" name="phone" type="tel" placeholder="+92 000 0000000" autocomplete="tel">
+    <label for="subject">Subject</label><input id="subject" name="subject" type="text" placeholder="How can we help?" required>
+    <label for="message">Message</label><textarea id="message" name="message" placeholder="Write your message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+  <p class="note">Design only: a backend or external form service is required to receive messages.</p></div>
+  <div class="info">
+    <div><h3>Email</h3><p>hello@example.com</p><p class="sample">Sample: replace with yours</p></div>
+    <div><h3>Phone</h3><p>+92 000 0000000</p><p class="sample">Sample: replace with yours</p></div>
+    <div><h3>Address</h3><p>Sample Street, Karachi, Pakistan</p><p class="sample">Sample: replace with yours</p></div>
+    <div><h3>Follow Us</h3><div class="social-row"><!-- REPLACE # with your URLs --><a class="btn small" href="#">Instagram</a><a class="btn small" href="#">Facebook</a><a class="btn small" href="#">Pinterest</a></div></div>
+  </div></div></section>
+<section class="bg-gray" aria-labelledby="faq-h"><div class="container narrow"><div class="head"><h2 id="faq-h">Frequently Asked Questions</h2></div>
+    <details><summary>How long does delivery take?</summary><p>Sample answer: 3-5 working days. Replace with your own policy.</p></details>
+    <details><summary>Can I exchange a T-shirt?</summary><p>Sample answer: unworn items can be exchanged within 7 days.</p></details>
+    <details><summary>How do I choose my size?</summary><p>Sample answer: check the size guide or message us for help.</p></details>
+    <details><summary>Do you accept custom orders?</summary><p>Sample answer: yes, contact us with your idea and quantity.</p></details>
+</div></section>
+<section class="hero promo promo-short" aria-label="Get in touch"><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=70" loading="lazy" alt="Model in a Fashion Store tee">
+  <div class="container"><h2>We're Here to Help</h2><p>Send us a message anytime, or browse the collection.</p><a class="btn btn-light" href="products.html">View Products</a></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div><p class="logo">FASHION STORE</p><p>Comfortable, stylish T-shirts for everyday fashion. Simple designs, honest quality.</p></div>
+    <div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></div>
+    <div><h3>Categories</h3><a href="products.html">Men's T-Shirts</a><a href="products.html">Women's T-Shirts</a><a href="products.html">Oversized T-Shirts</a><a href="products.html">Graphic T-Shirts</a><a href="products.html">Plain T-Shirts</a><a href="products.html">Printed T-Shirts</a></div>
+    <div><h3>Contact</h3><!-- REPLACE these sample details -->
+      <p>Email: hello@example.com</p><p>Phone: +92 000 0000000</p><p>Address: Sample Street, Karachi</p>
+      <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Pinterest</a>
+    </div>
+  </div>
+  <p class="copy">&copy; 2026 Fashion Store. All rights reserved.</p>
+</footer>
+</body>
+</html>
